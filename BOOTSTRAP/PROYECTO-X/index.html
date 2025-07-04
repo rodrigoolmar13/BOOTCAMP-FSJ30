@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROYECTO X</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand text-danger fw-bold" href="#">Eirbianbi</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explorar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Iniciar sesión</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--Main content-->
+    <main class="container mt-3">
+      <form class="bg-white row shadow-sm rounded p-3">
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Destino"
+            aria-label="default input example"
+          />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+          <input
+            class="form-control"
+            type="date"
+            aria-label="default input example"
+          />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+          <input
+            class="form-control"
+            type="date"
+            aria-label="default input example"
+          />
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-2">
+          <input
+            class="form-control"
+            type="text"
+            placeholder="Huespedes"
+            aria-label="default input example"
+          />
+        </div>
+        <div class="text-end">
+          <button class="btn btn-danger">Buscar</button>
+        </div>
+      </form>
+    </main>
+
+    <!--Cards-->
+
+    <section class="container">
+      <article class="row mt-3 mb-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/736x/76/26/c8/7626c809d51befbb12f8f13df4058b8a.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 35vh"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Casa en la playa</h5>
+              <p class="card-text">$200 USD / noche</p>
+              <p class="card-text">
+                <small>4.8 <i class="bi bi-star-fill"></i></small>
+              </p>
+              <a href="#" class="btn btn-primary">Alquilar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/736x/e9/af/44/e9af4499029aa4ff3b95bb999412174e.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 39vh"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cerro de Apaneca</h5>
+              <p class="card-text">$150 USD / noche</p>
+              <p class="card-text">
+                <small>4.9 <i class="bi bi-star-fill"></i></small>
+              </p>
+              <a href="#" class="btn btn-primary">Alquilar</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-2">
+          <div class="card h-100">
+            <img
+              src="https://i.pinimg.com/736x/6e/35/9d/6e359da0fe5124e65e614795d6d08553.jpg"
+              class="card-img-top"
+              alt="..."
+              style="max-height: 35vh"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Lago de Coatepeque</h5>
+              <p class="card-text">$210 USD / noche</p>
+              <p class="card-text">
+                <small>4.7 <i class="bi bi-star-fill"></i></small>
+              </p>
+              <a href="#" class="btn btn-primary">Alquilar</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!--Footer-->
+
+    <footer class="bg-light pt-3">
+      <div class="container">
+        <section class="row">
+          <article class="col-lg-4 col-md-4 col-sm-12">
+            <h5>Asistencia</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Centro de ayuda</a></li>
+              <li><a href="#">Antidiscriminacion</a></li>
+              <li><a href="#">Apoyo para discapacitados</a></li>
+              <li><a href="#">Opciones de cancelación</a></li>
+              <li><a href="#">Problemas en la zona</a></li>
+            </ul>
+          </article>
+
+          <article class="col-lg-4 col-md-4 col-sm-12">
+            <h5>Compañia</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Acerca de nosotros</a></li>
+              <li><a href="#">Prensa</a></li>
+              <li><a href="#">Empleo</a></li>
+              <li><a href="#">Inversores</a></li>
+            </ul>
+          </article>
+
+          <article class="col-lg-4 col-md-4 col-sm-12">
+            <h5>Legal</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacidad</a></li>
+              <li><a href="#">Términos</a></li>
+              <li><a href="#">Mapa del sitio</a></li>
+            </ul>
+          </article>
+        </section>
+        <hr />
+        <section class="row">
+          <article class="text-center pb-3">
+            <p>2025 Eirbianbi, Inc.</p>
+            <p>
+              <a href="#">Español</a> | <a href="#">USD</a> |
+              <a href="#"><i class="bi bi-facebook"></i></a> |
+              <a href="#"><i class="bi bi-instagram"></i></a> |
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </p>
+          </article>
+        </section>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

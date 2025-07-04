@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-color: #f56084;
+}
+/* GLOBALES */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(../assets/Image/background-adare-restaurant.jpg);
+  background-size: cover;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  text-align: center;
+}
+
+/* HEADER */
+.container .header {
+  text-align: center;
+  height: 20vh;
+}
+
+/* IMG-LOGO*/
+.container .header .img-container {
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container .header .img-container .img-logo {
+  height: 10vh;
+}
+
+/* NAVBAR*/
+.container .header .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin: 0 auto;
+}
+
+.container .header .navbar .nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: 0.3s ease-in-out;
+}
+
+.container .header .navbar .nav-item:hover {
+  animation: navItemHover 0.3s forwards;
+}
+
+@keyframes navItemHover {
+  0% {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  100% {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-size: 1.4em;
+  }
+}
+
+/* MAIN-CONTAINER */
+.container .main-container {
+  margin-top: 5vh;
+}
+
+.container .main-container .main-text-container {
+  color: white;
+  padding: 2rem;
+}
+
+.container .main-container .main-text-container .main-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5em;
+  transition: all 0.3s;
+}
+
+/* MAIN HOVER*/
+.container .main-container .main-text-container .main-text:hover {
+  text-shadow: 0.05em 0.05em var(--primary-color);
+}
+
+/* MAIN ARTICLE */
+.container .main-container .main-text-container article {
+  margin: 0 auto;
+  max-width: 40vw;
+}
+
+.container .main-container .main-text-container article p {
+  color: rgb(156, 155, 155);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1em;
+}
+
+.container .main-container .main-text-container article p strong a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0.1em 0.1em #f56084;
+}
+
+/* MAIN MAPS */
+.container .main-container .maps-container .maps {
+  height: 50vh;
+  width: 68vw;
+}
+
+/* FOOTER */
+.container .footer {
+  color: white;
+}
+
+.container .footer h4 {
+  font-size: 1.1em;
+}

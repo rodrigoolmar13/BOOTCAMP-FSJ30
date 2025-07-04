@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* GLOBALES */
+.main-body {
+  background-color: #192c63;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* WRAPER HEADER */
+.wraper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wraper .top-header .nabar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.wraper .top-header .nabar .logo-section .logo-text {
+  font-size: 2.5em;
+}
+.wraper .top-header .nabar .logo-section .logo-text span {
+  color: rgb(10, 165, 165);
+  text-shadow: 1px 1px 3px white;
+}
+
+.wraper .top-header .nabar .nav-menu{
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.wraper .top-header .nabar .nav-menu .hola{
+  color: white;
+  text-decoration: none;
+}
+
+.wraper .top-header .nabar .nav-menu .hola:hover{
+   animation: menuNav 0.3s forwards;
+}
+
+@keyframes menuNav {
+  to {
+    color: #bb0b83;
+    text-decoration: underline;
+    font-size: 1.4em;
+  }
+}
+
+/* WRAPER MAIN-CTN */
+.wraper .main-ctn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.wraper .main-ctn .biografia {
+  margin: 0 auto;
+}
+
+.wraper .main-ctn .biografia .typing {
+  overflow: hidden;
+  border-right: 2px white;
+  animation: typing 2s steps(25);
+}
+@keyframes typing {
+  to {
+    width: 100%;
+  }
+}
+
+.wraper .main-ctn .biografia .boton {
+  background: #bb0b83;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.wraper .main-ctn .foto-container .foto {
+  width: 60%;
+  border-radius: 10px;
+  margin: 0 1.5em 0 1.5em;
+  transition: all 0.5s ease-in-out;
+  
+}
+
+.wraper .main-ctn .foto-container .foto:hover{
+  text-shadow: 5px 5px 0.3s rgb(234, 74, 100);
+}
+
+/* WRAPER MIS PROYECTOS */
+
+.wraper .mis-proyectos .projects-header .centered {
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+.wraper .mis-proyectos .grid-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.wraper .mis-proyectos .grid-container .projectcard {
+  color: blue;
+  margin: 16px;
+  background-color: #e2e4ea;
+  padding: 8px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.wraper .mis-proyectos .grid-container .projectcard .img-top {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.wraper .mis-proyectos .grid-container .projectcard .cardcontent h3 {
+  margin-left: 10px;
+}
+
+.wraper .mis-proyectos .grid-container .projectcard .cardcontent .enlaces {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* WRAPER  FORMULARIO */
+
+.wraper .contacto .formulario {
+  max-width: 600px;
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  color: black;
+  height: 35vh;
+}
+
+.wraper .contacto .formulario .inpt {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.wraper .contacto .formulario .bt-submit {
+  background-color: rgb(223, 29, 175);
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 6vh;
+  width: 6vw;
+}
+
+/* WRAPER FOOTER */
+
+.wraper .footer-section {
+  text-align: center;
+}
+
+.wraper .footer-section .footer-text {
+  font-size: 1.5rem;
+}
+
+.wraper .footer-section .redes-sociales a {
+  color: #1f18f5;
+  display: inline;
+  margin: 15px;
+  gap: 2rem;
+  margin-top: 1rem;
+  padding-bottom: 20px;
+}
